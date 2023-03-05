@@ -1,0 +1,12 @@
+<div class="w-56 text-white pt-5 pl-5 ">
+    <h1 class="text-2xl font-bold">User <span class="text-base font-normal">Social</span></h1>
+
+    <nav class="pt-5">
+        <ul class="">
+            <li *ngFor="let item of menuItem" [routerLink]="[item.url]" class=" mb-5 text-lg cursor-pointer">
+                <i class="{{item.icon}} pr-1"></i>
+                {{item.name}}
+            </li>
+        </ul>
+    </nav>
+</div>
